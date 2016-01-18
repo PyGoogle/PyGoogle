@@ -1,1 +1,2 @@
-# Rails4-PyGoogle
+# RubyOnRails-PyGoogle
+Rails4 PyGoogle
