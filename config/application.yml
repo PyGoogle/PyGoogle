@@ -31,9 +31,7 @@ common: &common
 
   mail:
     layout: 'emails/email'
-    #from: 'KHongSanFrancisco@gmail.com'
-    from: 'kihyuck.hong@gmail.com'
-
+    from: 'KHongSanFrancisco@gmail.com'
 
 # Default ENV vars.
 # Set to development values for convenience and override in production by setting ENV on the server.
