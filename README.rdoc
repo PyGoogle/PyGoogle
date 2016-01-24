@@ -27,7 +27,7 @@ accounts after sign up.
 -- Landing page
 
 ![alt text](https://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png)
-
+![alt text](http://einsteinish.com/static/img/Blackhole.jpg)
 
 == Status
 
