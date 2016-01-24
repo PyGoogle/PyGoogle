@@ -26,7 +26,7 @@ accounts after sign up.
 
 -- Landing page
 
-![alt text](https://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png)
+![alt text](https://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.jpg)
 
 
 == Status
