@@ -24,6 +24,8 @@ accounts after sign up.
 
 {Email Template Preview}[https://pygoogle.com/p/email?premail=true&layout=email] — with inline CSS via Premailer
 
+-- Landing page
+![alt text](https://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png "Landing page")
 
 == Status
 
