@@ -33,21 +33,25 @@ common: &common
     layout: 'emails/email'
     from: 'KHongSanFrancisco@gmail.com'
 
+  SENDMAIL_USERNAME: 'KHongSanFrancisco@gmail.com'
+  SENDMAIL_PASSWORD: 'idaho21G2'
+
 # Default ENV vars.
 # Set to development values for convenience and override in production by setting ENV on the server.
 # As a best practice, do not put production values in this file for security reasons.
 default_env: &default_env
   # From address to use when sending email
-  MAIL_HOST: 'localhost:3000'
+  #MAIL_HOST: 'localhost:3000'
+  MAIL_HOST: 'pygoogle.com'
 
   # Host used to determine direct requests vs CDN.
   # See RobotsController.
   CANONICAL_HOST: 'pygoogle.herokuapp.com'
 
-  AUTH_FACEBOOK_KEY: '463'
-  AUTH_FACEBOOK_SECRET: '5b1'
-  AUTH_TWITTER_KEY: '08P'
-  AUTH_TWITTER_SECRET: 'RXX'
+  #AUTH_FACEBOOK_KEY: '47'
+  #AUTH_FACEBOOK_SECRET: 'f7'
+  #AUTH_TWITTER_KEY: 'ye'
+  #AUTH_TWITTER_SECRET: 'jr'
 
   # Devise password encryption keys.
   # Channging the keys will invalidate user passwords,
@@ -58,7 +62,7 @@ default_env: &default_env
 
   # Signed cookie encryption key.
   # TODO: make new key with `rake secret`
-  SECRET_KEY_BASE: '16e628ec083d6127ca30716ac69c578ba47a900702f0d498c149b87d06eeebd1bc0be22929e16e2180cb137e9be8bc7f77dd3b9c13fbb306330bb6450cfbc051'
+  # SECRET_KEY_BASE: '16e628ec083d6127ca30716ac69c578ba47a900702f0d498c149b87d06eeebd1bc0be22929e16e2180cb137e9be8bc7f77dd3b9c13fbb306330bb6450cfbc051'
 
   # Redis server used by Sidekiq, cache, etc.
   REDIS_URL: 'redis://localhost:6379/0'

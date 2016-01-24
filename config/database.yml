@@ -57,4 +57,4 @@ production:
   database: <%= Rails.application.config.settings.app_name %>_production
   pool: 5
   username: postgres
-  password:
+  password: kkb777AOL
