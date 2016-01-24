@@ -34,7 +34,7 @@ common: &common
     from: 'KHongSanFrancisco@gmail.com'
 
   SENDMAIL_USERNAME: 'KHongSanFrancisco@gmail.com'
-  SENDMAIL_PASSWORD: 'idaho21G2'
+  #SENDMAIL_PASSWORD: 'aaa'
 
 # Default ENV vars.
 # Set to development values for convenience and override in production by setting ENV on the server.
@@ -42,7 +42,7 @@ common: &common
 default_env: &default_env
   # From address to use when sending email
   #MAIL_HOST: 'localhost:3000'
-  MAIL_HOST: 'pygoogle.com'
+  #MAIL_HOST: 'pygoogle.com'
 
   # Host used to determine direct requests vs CDN.
   # See RobotsController.
