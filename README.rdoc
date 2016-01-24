@@ -1,7 +1,7 @@
 = Rails 4.1 PyGoogle ({https://pygoogle.com}[https://pygoogle.com])
 
 Bootstrap 3 / Foundation 5 + CoffeeScript + Sass + Devise + everything else you need to get into production, fast.
-(Note) This repo was cloned from {Rails 4 Starter-kit}[https://github.com/sahat/hackathon-starter.git] and tested with Apache + Phusion passenger (see the screen shots in Demo section).
+(Note) This repo was cloned from {Rails 4 Starter-kit}[https://github.com/starterkits/rails4-starterkit] and tested with Apache + Phusion passenger (see the screen shots in Demo section).
 
 = Overview
 
