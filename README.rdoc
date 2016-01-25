@@ -2,6 +2,7 @@
 
 Bootstrap 3 / Foundation 5 + CoffeeScript + Sass + Devise + everything else you need to get into production, fast.
 (Note) This repo was cloned from {Rails 4 Starter-kit}[https://github.com/starterkits/rails4-starterkit] and tested with Apache + Phusion passenger (see the screen shots in Demo section).
+Tutorial : {Deploying a Rails 4 app on CentOS 7 production server with Apache and Passenger}[http://bogotobogo.com/RubyOnRails/RubyOnRails-Deploying-a-Rails4-App-on-CentOS7-production-server-with-Apache-and-Passenger.php]
 
 = Overview
 
@@ -26,8 +27,6 @@ accounts after sign up.
 
 ----
 Demo Images 
-
-![Alt text](http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png "Landing Page")
 
 {Landing Page}[http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png]
 
