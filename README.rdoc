@@ -27,6 +27,8 @@ accounts after sign up.
 ----
 Demo Images 
 
+![Landing Page](http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png)
+
 {Landing Page}[http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png]
 
 {SignUp Page}[http://pygoogle.com/PyGoogleImages/PyGoogleSignUpPage.png]
