@@ -8,4 +8,3 @@ end
 
 # Initialize the Rails application.
 Rails.application.initialize!
-Rails.env="production"
