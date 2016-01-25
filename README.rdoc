@@ -27,7 +27,7 @@ accounts after sign up.
 ----
 Demo Images 
 
-![Landing Page](http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png)
+![Alt text](http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png "Landing Page")
 
 {Landing Page}[http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png]
 
