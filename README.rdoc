@@ -1,7 +1,9 @@
 = Rails 4.1 PyGoogle ({http://pygoogle.com}[http://pygoogle.com])
 
-(Note) This repo for pygoogle.com. 
+(Note) This repo is for pygoogle.com. 
+
 Demo version is available at demo.pygoogle.com
+
 
 Bootstrap 3 / Foundation 5 + CoffeeScript + Sass + Devise + everything else you need to get into production, fast.
 
