@@ -1,4 +1,4 @@
-= Rails 4.1 PyGoogle ({http://pygoogle.com}[http://pygoogle.com])
+= Rails 4.1 PyGoogle ({http://demo.pygoogle.com}[http://demo.pygoogle.com])
 
 Bootstrap 3 / Foundation 5 + CoffeeScript + Sass + Devise + everything else you need to get into production, fast.
 (Note) This repo was cloned from {Rails 4 Starter-kit}[https://github.com/starterkits/rails4-starterkit] and tested with Apache + Phusion passenger (see the screen shots in Demo section).
@@ -21,28 +21,28 @@ accounts after sign up.
 
 == Demo
 
-{Demo}[http://pygoogle.com] — Bootstrap 3
+{Demo}[http://demo.pygoogle.com] — Bootstrap 3
 
-{Email Template Preview - not for production}[http://pygoogle.com/p/email?premail=true&layout=email] — with inline CSS via Premailer
+{Email Template Preview - not for production}[http://demo.pygoogle.com/p/email?premail=true&layout=email] — with inline CSS via Premailer
 
 ----
 Demo Images 
 
 {Landing Page}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png]
 
-{SignUp Page}[http://pygoogle.com/PyGoogleImages/PyGoogleSignUpPage.png]
+{SignUp Page}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleSignUpPage.png]
 
-{Facebook Sign Up Page}[http://pygoogle.com/PyGoogleImages/PyGoogleFacebookSignUp.png]
+{Facebook Sign Up Page}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleFacebookSignUp.png]
 
-{After signin Facebook}[http://pygoogle.com/PyGoogleImages/PyGoogleSignUpAfterFacebookLogin.png] 
+{After signin Facebook}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleSignUpAfterFacebookLogin.png] 
 
-{User Home after signin via Facebook}[http://pygoogle.com/PyGoogleImages/PyGoogleUserHomeAfterSigningUpViaFacebook.png]
+{User Home after signin via Facebook}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleUserHomeAfterSigningUpViaFacebook.png]
 
-{Twitter Sign Up Page}[http://pygoogle.com/PyGoogleImages/PyGoogleTwitterSignUp.png]
+{Twitter Sign Up Page}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleTwitterSignUp.png]
 
-{After signin Twitter}[http://pygoogle.com/PyGoogleImages/PyGoogleSignUpAfterTwitterLogin.png]
+{After signin Twitter}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleSignUpAfterTwitterLogin.png]
 
-{Native site Sign Up Page}[http://pygoogle.com/PyGoogleImages/PyGoogleDirectSignUpPage.png]
+{Native site Sign Up Page}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleDirectSignUpPage.png]
 
 
 
