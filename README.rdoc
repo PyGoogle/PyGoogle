@@ -23,12 +23,12 @@ accounts after sign up.
 
 {Demo}[http://pygoogle.com] — Bootstrap 3
 
-{Email Template Preview}[http://pygoogle.com/p/email?premail=true&layout=email] — with inline CSS via Premailer
+{Email Template Preview - not for production}[http://pygoogle.com/p/email?premail=true&layout=email] — with inline CSS via Premailer
 
 ----
 Demo Images 
 
-{Landing Page}[http://pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png]
+{Landing Page}[http://demo.pygoogle.com/PyGoogleImages/PyGoogleLandingPage.png]
 
 {SignUp Page}[http://pygoogle.com/PyGoogleImages/PyGoogleSignUpPage.png]
 
