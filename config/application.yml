@@ -9,7 +9,7 @@ common: &common
   # Downcased and trimmed app name for namespaces.
   # Safest to start with a letter rather than a number.
   # See locales/en.yml for setting your app's user facing brand name.
-  app_name: 'pygoogle'
+  app_name: 'pygoogle_demo'
 
   social:
     facebook: 'https://www.facebook.com/KHongSanFrancisco'
