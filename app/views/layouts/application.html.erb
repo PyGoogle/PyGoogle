@@ -19,15 +19,22 @@
     <%= yield :head %>
     <%= render 'layouts/airbrake' %>
   </head>
+
   <body class="controller__<%= controller_name %> action__<%= action_name %> ">
     <%= render 'layouts/navigation' %>
     <div class="container">
-      <div class="errors__container">
-        <%= render 'layouts/messages' %>
-      </div>
-
-      <%= yield %>
-      <%= render 'layouts/image_gallery' %>
+      <div class="row"> <!-- row starts -->
+        <div class="col-sm-10"> <!-- main content -->
+          <div class="errors__container">
+            <%= render 'layouts/messages' %>
+          </div>
+          <%= yield %>
+          <%= render 'layouts/image_gallery' %>
+        </div>
+        <div class="col-sm-2"> <!-- div for right sidebar -->
+          <%= render 'layouts/googlefollow' %>
+        </div>
+      </div> <!-- row ends here -->
       <footer class="page__footer">
         <% if content_for? :footer %>
           <%= yield :footer %>
@@ -35,6 +42,10 @@
           <%= render 'layouts/footer' %>
         <% end %>
       </footer>
+      <% if content_for? :googlefollow %>
+            <%= yield :googlefollow %>
+      <% end %>
+
     </div>
     <%= render 'layouts/analytics' %>
     <%= render 'layouts/javascripts' %>
