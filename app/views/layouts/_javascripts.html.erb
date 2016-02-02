@@ -1,0 +1,15 @@
+<% # JavaScripts included in <body> for initializing Backbone views, etc. %>
+<% # Immediately executable javascript %>
+<% if content_for? :javascript %>
+  <%= yield :javascript %>
+<% end %>
+<% # Document ready javascript %>
+<% if content_for? :on_ready %>
+  <script>
+    
+    head.ready(function(){
+      #{yield :on_ready}
+    })
+
+  </script>
+<% end %>

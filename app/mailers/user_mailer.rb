@@ -4,6 +4,7 @@ class UserMailer < ActionMailer::Base
 
   def welcome_email(user)
     return false unless load_user(user).present?
+    @user = user
     mail to: @user.email, subject: I18n.t('emails.welcome.subject')
   end
 

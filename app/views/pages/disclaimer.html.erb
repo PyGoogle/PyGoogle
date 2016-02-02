@@ -1,0 +1,20 @@
+<!--
+<% content_for :title do %>
+  Disclaimer | PyGoogle
+<% end %>
+-->
+<title><%= yield(:title) %> | PyGoogle
+</title>
+<h1>
+  Disclaimer
+</h1>
+<p>
+  <%= I18n.t 'brand.name' %>
+  does not have any affiliation, endorsement or adoption by Google. </p>
+
+<p>We are not giving any authentic advice and all information on this website is for informational purposes only. By using product of PyGoogle, you are doing so at your own risk and knowingly waive all rights to make any legal claims against the site owners or its affiliates.</p>
+
+</p>
+<p>
+  <%= link_to 'PyGoogle', 'pages_path' %>
+</p>

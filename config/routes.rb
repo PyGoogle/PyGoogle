@@ -1,5 +1,6 @@
 # Route prefixes use a single letter to allow for vanity urls of two or more characters
 Rails.application.routes.draw do
+
   if defined? Sidekiq
     require 'sidekiq/web'
     authenticate :user, lambda {|u| u.is_admin? } do
@@ -8,11 +9,6 @@ Rails.application.routes.draw do
   end
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin' if defined? RailsAdmin
-
-  # Static pages
-  match '/error' => 'pages#error', via: [:get, :post], as: 'error_page'
-  get '/terms' => 'pages#terms', as: 'terms'
-  get '/privacy' => 'pages#privacy', as: 'privacy'
 
   # OAuth
   oauth_prefix = Rails.application.config.auth.omniauth.path_prefix
@@ -45,4 +41,58 @@ Rails.application.routes.draw do
   get 'robots.:format' => 'robots#index'
 
   root 'pages#home'
+
+  # Static pages
+  match '/error' => 'pages#error', via: [:get, :post], as: 'error_page'
+  get '/disclaimer' => 'pages#disclaimer', as: 'disclaimer'
+  get '/terms' => 'pages#terms', as: 'terms'
+  get '/privacy' => 'pages#privacy', as: 'privacy'
+
+
+  # Google plus
+  get '/googleplus' => 'googleplus#home', as: 'googleplus'
+  get '/googleplus/secondpage' 
+
+  get '/plus' => 'plus#home', as: 'plus'
+  get '/plus/second' 
+
+  # Youtube
+  get '/youtube' => 'youtube#home', as: 'youtube'
+  get '/youtube/second' 
+ 
+  # Search
+  get '/search' => 'search#home', as: 'search'
+  get '/search/second' 
+
+  # Chrome
+  get '/chrome' => 'chrome#home', as: 'chrome'
+  get '/chrome/second' 
+
+  # Hangouts
+  get '/hangouts' => 'hangouts#home', as: 'hangouts'
+  get '/hangouts/second' 
+
+  # Translate
+  get '/translate' => 'translate#home', as: 'translate'
+  get '/translate/second' 
+
+  # Maps
+  get '/maps' => 'maps#home', as: 'maps'
+  get '/maps/second' 
+
+  # gmail
+  get '/gmail' => 'gmail#home', as: 'gmail'
+  get '/gmail/second' 
+
+  # drive
+  get '/drive' => 'drive#home', as: 'drive'
+  get '/drive/second' 
+
+  # gmail
+  get '/calendar' => 'calendar#home', as: 'calendar'
+  get '/calendar/second' 
+
+  # play
+  get '/play' => 'play#home', as: 'play'
+  get '/play/second' 
 end

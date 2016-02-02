@@ -1,0 +1,9 @@
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) and msg.present? %>
+    <% type = (['info', 'success', 'warning', 'danger'].include?(name.to_s) ? name : 'info') %>
+    <div class="alert-<%= type %> alert alert-dismissable">
+      <button aria-hidden="<%= true %>" class="close" data-dismiss="alert">&times;</button>
+      <%= msg %>
+    </div>
+  <% end %>
+<% end %>

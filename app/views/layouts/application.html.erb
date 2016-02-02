@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" 
+          name="viewport"/>
+    <title><%= content_for?(:title) ? yield(:title) : I18n.t('brand.name') %></title>
+
+    <meta name="description" 
+          content="<%= content_for?(:description) ? yield(:description) : I18n.t('brand.name') %>">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <!--[if lt IE 9]
+      <%= javascript_include_tag 'ie', 'data-turbolinks-track' => true %>
+    -->
+    <%= javascript_include_tag 'head', 'data-turbolinks-track' => true %>
+    <%= headjs_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <%= yield :head %>
+    <%= render 'layouts/airbrake' %>
+  </head>
+  <body class="controller__<%= controller_name %> action__<%= action_name %> ">
+    <%= render 'layouts/navigation' %>
+    <div class="container">
+      <div class="errors__container">
+        <%= render 'layouts/messages' %>
+      </div>
+
+      <%= yield %>
+      <%= render 'layouts/image_gallery' %>
+      <footer class="page__footer">
+        <% if content_for? :footer %>
+          <%= yield :footer %>
+        <% else %>
+          <%= render 'layouts/footer' %>
+        <% end %>
+      </footer>
+    </div>
+    <%= render 'layouts/analytics' %>
+    <%= render 'layouts/javascripts' %>
+  </body>
+</html>

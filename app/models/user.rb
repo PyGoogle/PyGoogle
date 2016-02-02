@@ -53,7 +53,7 @@ class User < ActiveRecord::Base
 
   # Do not require email confirmation to login or perform actions
   def confirmation_required?
-    false
+    true
   end
 
   def send_welcome_emails
