@@ -44,6 +44,7 @@ Rails.application.routes.draw do
 
   # Static pages
   match '/error' => 'pages#error', via: [:get, :post], as: 'error_page'
+
   get '/disclaimer' => 'pages#disclaimer', as: 'disclaimer'
   get '/terms' => 'pages#terms', as: 'terms'
   get '/privacy' => 'pages#privacy', as: 'privacy'
@@ -95,4 +96,10 @@ Rails.application.routes.draw do
   # play
   get '/play' => 'play#home', as: 'play'
   get '/play/second' 
+
+  # google projects
+  get '/projects' => 'projects#home', as: 'projects'
+  get '/projects/second' 
+  get '/projects/skybender' => 'projects#skybender', as: 'projects_skybender'
+  get '/projects/skybender/second' 
 end

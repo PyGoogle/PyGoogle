@@ -1,4 +1,3 @@
-# http://stackoverflow.com/questions/8215132/rails-dynamic-robots-txt-with-erb
 
 class RobotsController < ApplicationController
   skip_authorization_check
