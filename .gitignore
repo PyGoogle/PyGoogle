@@ -24,3 +24,6 @@
 
 **/application_local.yml
 **/README.md
+
+# Ignore /public/assests
+public/assests/
