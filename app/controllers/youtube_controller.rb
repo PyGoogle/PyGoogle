@@ -3,6 +3,11 @@ class YoutubeController < ApplicationController
   skip_before_action :authenticate_user!
   def home
   end
-  #def second
-  #end
+
+  def another
+  end
+
+  def extract_iframe
+  end
+
 end

@@ -1,8 +1,39 @@
 <% content_for :title, "YouTube+" %>
 <%= link_to image_tag("icons/youtube.png", alt: "youtube_icon"),'/youtube' %>
 
-<h1>YouTube+ Home beta</h1>
-<p>Find me in views/youtube/home</p>
+<h1>YouTube Home</h1>
+<hr>
+<p>We'll start from a cosuming side (download) rather than a producing site (uploading).</p>
+<hr>
+<h2>How to download a YouTube video</h2>
+<p>Though there are numerous ways of downloading the video, we'll use <a href="https://rg3.github.io/youtube-dl/">youtube-dl</a>:</p>
+<pre>
+<code>$ youtube-dl https://www.youtube.com/watch?v=N6-2fVsFV8E</code>
+</pre>
+<p>If we do not want to delete the original before youtube-dl merges, we can use <b>k</b> option:</p>
+<pre>
+<code>$ youtube-dl -k https://www.youtube.com/watch?v=N6-2fVsFV8E</code>
+</pre>
+<p>Check what files are there:</p>
+<pre>
+<code>$ ls
+Yosemite HD-N6-2fVsFV8E.f171.webm  Yosemite HD-N6-2fVsFV8E.f264.mp4  Yosemite HD-N6-2fVsFV8E.mkv</code>
+</pre>
+<p>We may want to rename it to a simple one such as <b>YosemiteHDI.mp4</b> for later use.</p>
+
+<hr>
+
+<p>Here is the downloaded video:</p>
+<%= video_tag (["youtube/how-to-download/YosemiteHDI.mp4","youtube/how-to-download/YosemiteHDI.ogv","youtube/how-to-download/YosemiteHDI.webm"]), :size => "640x480", :controls => true, :fallback_content => "Your browser does not support HTML5 video tags", :poster => "youtube/how-to-download/YosemiteHDI-Thumb.png" %>
+
+<hr>
+<hr>
+
+<h2>Extracting i-frames</h2>
+
+<p>We can do more than just download a video.</p>
+<p>Please visit <%= link_to 'YouTube extract-iframe page ', youtube_extract_iframe_path %>  </p>
+
 <hr>
 
 <%= render "links.html.erb" %>
