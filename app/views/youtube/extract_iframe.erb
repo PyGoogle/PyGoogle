@@ -1,0 +1,79 @@
+<% content_for :title, "YouTube+" %>
+<%= link_to image_tag("icons/youtube.png", alt: "youtube_icon"),'/youtube' %>
+<br>
+<h1>Extracting i-frames</h1>
+<hr>
+<p>We can do more than just download a video.</p>
+<p>Here is a command that we can get images from the i-frames of the downloaded video:</p>
+<pre>
+<code>$ ffmpeg -i YosemiteHDI.mp4 -f image2 -vf "select='eq(pict_type,PICT_TYPE_I)'" -vsync vfr iframes/yi%03d.png</code>
+</pre>
+<br>
+<br>
+<hr>
+<h1>Capturing scene change</h1>
+<hr>
+
+<p>Using the select filter again, the following command selects only frames that have more than 50% of changes compared to previous scene and generates pngs.</p>
+<pre>
+<code>$ ffmpeg -i YosemiteHDI.mp4 -vf  "select=gt(scene\,0.5), scale=640:360" -vsync vfr scenechange/yosemiteThumb%03d.png</code>
+</pre>
+<p>The command stores the extracted frames into <b>scenechage</b> folder.</p>
+<p>By using scene change method, we created fewer number of images (22 compared with 116 i-frame selection) while capturing significant scene changes:</p>
+<table>
+<tr>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb001.png", :size => "64x48", :alt => "yosemiteThumb001") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb002.png", :size => "64x48", :alt => "yosemiteThumb002") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb003.png", :size => "64x48", :alt => "yosemiteThumb003") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb004.png", :size => "64x48", :alt => "yosemiteThumb004") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb005.png", :size => "64x48", :alt => "yosemiteThumb005") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb006.png", :size => "64x48", :alt => "yosemiteThumb006") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb007.png", :size => "64x48", :alt => "yosemiteThumb007") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb008.png", :size => "64x48", :alt => "yosemiteThumb008") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb009.png", :size => "64x48", :alt => "yosemiteThumb009") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb010.png", :size => "64x48", :alt => "yosemiteThumb010") %>
+  </td>
+</tr>
+<tr>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb011.png", :size => "64x48", :alt => "yosemiteThumb011") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb012.png", :size => "64x48", :alt => "yosemiteThumb012") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb013.png", :size => "64x48", :alt => "yosemiteThumb013") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb014.png", :size => "64x48", :alt => "yosemiteThumb014") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb015.png", :size => "64x48", :alt => "yosemiteThumb015") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb016.png", :size => "64x48", :alt => "yosemiteThumb016") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb017.png", :size => "64x48", :alt => "yosemiteThumb017") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb018.png", :size => "64x48", :alt => "yosemiteThumb018") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb019.png", :size => "64x48", :alt => "yosemiteThumb019") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb020.png", :size => "64x48", :alt => "yosemiteThumb020") %>
+  </td>
+</tr>
+<tr>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb021.png", :size => "64x48", :alt => "yosemiteThumb021") %>
+  </td>
+  <td><%= image_tag("youtube/scenechange/yosemiteThumb022.png", :size => "64x48", :alt => "yosemiteThumb022") %>
+  </td>
+</table>
+<hr>
+<p>We can make an image composed of the images like we produced by the extraction.</p>
+<p>Please visit 
+<%= link_to 'YouTube mosaic-tile page ', youtube_mosaic_tile_path %> </p>
+<hr>
+<%= render "links.html.erb" %>

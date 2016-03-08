@@ -59,7 +59,9 @@ Rails.application.routes.draw do
 
   # Youtube
   get '/youtube' => 'youtube#home', as: 'youtube'
-  get '/youtube/second' 
+  get '/youtube/extract_iframe' => 'youtube#extract_iframe', as: 'youtube_extract_iframe'
+  get '/youtube/mosaic_tile' => 'youtube#mosaic_tile', as: 'youtube_mosaic_tile'
+  get '/youtube/another' 
  
   # Search
   get '/search' => 'search#home', as: 'search'
