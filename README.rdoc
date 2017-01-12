@@ -384,4 +384,4 @@ available in other environments, set the ALLOW_EMAIL_PREVIEW='1'.
 
 == Repo Updates
 
-{Github repo moved to https://github.com/Einsteinish/PyGoogle.git}[https://github.com/Einsteinish/PyGoogle.git]
+Github repo moved to https://github.com/Einsteinish/PyGoogle.git [https://github.com/Einsteinish/PyGoogle.git]
