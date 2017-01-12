@@ -381,3 +381,7 @@ available in other environments, set the ALLOW_EMAIL_PREVIEW='1'.
 * Make sure rspecs follow best practices: http://betterspecs.org/
 * Run should_clean -d spec/
 
+
+== Repo Updates
+
+{Github repo moved to https://github.com/Einsteinish/PyGoogle.git}[https://github.com/Einsteinish/PyGoogle.git]
