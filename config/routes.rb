@@ -51,11 +51,11 @@ Rails.application.routes.draw do
 
 
   # Google plus
-  get '/googleplus' => 'googleplus#home', as: 'googleplus'
-  get '/googleplus/secondpage' 
+  # get '/googleplus' => 'googleplus#home', as: 'googleplus'
+  # get '/googleplus/secondpage' 
 
-  get '/plus' => 'plus#home', as: 'plus'
-  get '/plus/second' 
+  # get '/plus' => 'plus#home', as: 'plus'
+  # get '/plus/second' 
 
   # Youtube
   get '/youtube' => 'youtube#home', as: 'youtube'
